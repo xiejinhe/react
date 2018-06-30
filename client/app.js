@@ -9,6 +9,7 @@ import appState from './store/app-state';
 
 const root = document.getElementById('root');
 const render = (Component) => {
+  console.log(11);
   ReactDOM.hydrate(
     <AppContainer>
       <Provider appState={appState}>

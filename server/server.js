@@ -41,6 +41,3 @@ if (!isDev) {
   const devStatic = require('./unit/dev-static')
   devStatic(app)
 }
-app.listen(3333, function () {
-  console.log('server is listening on 3333')
-})

@@ -4,7 +4,7 @@ const webpackMerge = require('webpack-merge')
 const baseConfig = require('./webpack.base')
 const HTMLPlugin = require('html-webpack-plugin')
 
-const isDev = process.env.NODE_ENV === 'development';
+const isDev = process.env.NODE_ENV === 'development'
 
 const config = webpackMerge(baseConfig, {
   entry: {

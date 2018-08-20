@@ -22,9 +22,10 @@ router.post('/login', function (req, res, next) {
     }
   }).catch(err => {
     if (err.respone) {
+      console.log(err.respone)
       res.json({
         success: false,
-        data: err.respone
+        data: err.respone.data
       })
     } else {
       next(err)
